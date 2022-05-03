@@ -1,0 +1,470 @@
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+body {
+    height: 3000px;
+}
+
+.banner-box img {
+    width: 1226px;
+    margin: 22px 0;
+}
+
+/* header start */
+
+/* topbar*/
+.topbar {
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* topbar-nav */
+.topbar .topbar-nav {
+    float: left;
+}
+
+.topbar .topbar-nav ul li {
+    float: left;
+}
+
+.topbar .topbar-nav ul li a {
+    display: inline-block;
+    height: 40px;
+    color: #b0b0b0;
+    line-height: 40px;
+    transition: all .5s;
+}
+
+.topbar .topbar-nav ul li:hover a {
+    color: #fff;
+}
+
+.topbar .topbar-nav ul li span {
+    margin: 0 .3em;
+    color: #424242;
+}
+
+/* topbar-info */
+.topbar .topbar-info {
+    float: right;
+}
+
+.topbar .topbar-info ul li {
+    float: left;
+}
+
+.topbar .topbar-info ul li a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 5px;
+    color: #b0b0b0;
+    line-height: 40px;
+    transition: all .5s;
+}
+
+.topbar .topbar-info ul li span {
+    color: #424242;
+}
+
+.topbar .topbar-info ul li:hover a,
+.topbar-info .shopcar:hover {
+    color: #fff;
+}
+
+.topbar-info .shopcar {
+    float: left;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    text-align: center;
+    color: #b0b0b0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.topbar-info .shopcar i {
+    display: inline-block;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* header-logo */
+.container {
+    position: relative;
+    margin-top: 22px;
+    height: 100px;
+}
+
+.header-logo {
+    float: left;
+    width: 56px;
+    height: 56px;
+}
+
+.header-logo a {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background: url(../images/logo-mi2.png) no-repeat;
+    background-size: 56px;
+    font-size: 0;
+}
+
+/* header-nav */
+.header-nav {
+    position: absolute;
+    content: '';
+    left: 234px;
+    top: 12px;
+}
+
+.header-nav ul li {
+    float: left;
+}
+
+.header-nav ul li a {
+    padding: 26px 10px 38px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* header-search */
+.header-search {
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 290px;
+}
+
+.header-search input[type="search"] {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    line-height: 50px;
+}
+
+.header-search input[type="submit"] {
+    float: left;
+    width: 50px;
+    height: 50px;
+    font-family: "iconfont" !important;
+    color: #616161;
+    font-size: 24px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.header-search input[type="submit"]:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+/* header end */
+/* banner start */
+.banner {
+    width: 1226px;
+    height: 460px;
+    background-color: plum;
+    overflow: hidden;
+}
+
+.banner .bannerPic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+}
+
+.banner .bannerPic img {
+    width: 1226px;
+}
+
+.banner .bannerPic ul li {
+    float: left;
+}
+
+/* menu */
+.banner {
+    position: relative;
+}
+
+.banner .menu {
+    position: absolute;
+    float: left;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 234px;
+    height: 460px;
+    padding: 20px 0;
+    background: rgba(105, 101, 101, .6);
+}
+
+.banner .menu ul li {
+    position: relative;
+    height: 42px;
+    padding-left: 30px;
+    /* transition: all .5s; */
+}
+
+.banner .menu ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 42px;
+    color: #fff;
+}
+
+.banner .menu ul li span {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 20px;
+    color: #fff;
+}
+
+.banner .menu ul li:hover {
+    background: #ff6700;
+}
+
+/* bannerDot */
+.bannerDot {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+.bannerDot span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.bannerDot .current,
+.bannerDot span:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* arrow */
+.banner .arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 70px;
+    margin-top: -35px;
+    font-size: 50px;
+    color: #757575;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .3s;
+}
+
+.banner .prevArrow {
+    left: 234px;
+}
+
+.banner .nextArrow {
+    right: 0;
+}
+
+.banner .arrow:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+/* banner end */
+/* 图片栏 start */
+.suggest {
+    height: 170px;
+    margin: 14px auto 26px;
+}
+
+.suggest .app {
+    float: left;
+    overflow: hidden;
+    width: 234px;
+    height: 170px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #5f5750;
+}
+
+.suggest .app li {
+    float: left;
+    width: 78px;
+    height: 85px;
+    padding: 18px 3px 0;
+    transition: color .2s;
+    border-right: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+}
+
+.suggest .app li a {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.suggest .app li:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.suggest .app li i {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.suggest .suggestImg {
+    float: left;
+    margin-left: -1px;
+    width: 993px;
+    height: 170px;
+}
+
+.suggest .suggestImg li {
+    margin-left: 15px;
+    float: left;
+    width: 316px;
+    height: 170px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+
+.suggest .suggestImg li img {
+    width: 316px;
+    height: 170px;
+}
+
+.suggest .suggestImg li:hover {
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 15px 30px;
+}
+
+/* 图片栏 end */
+/* main start */
+.main {
+    padding-top: 60px;
+    background-color: #f5f5f5;
+}
+
+.phone .title {
+    height: 58px;
+    line-height: 58px;
+    /* background-color: plum; */
+}
+
+.phone .title h2 {
+    float: left;
+    font-weight: 400;
+}
+
+.phone .title p {
+    float: right;
+    transition: all .4s;
+}
+
+.phone .title p i {
+    margin-left: 10px;
+    color: #b0b0b0;
+}
+
+.phone .title p a {
+    font-size: 16px;
+    color: #424242;
+}
+
+.phone .title p:hover a {
+    color: #ff6700;
+}
+
+.phone .title p:hover i {
+    color: #ff6700;
+}
+
+.phone .aside {
+    float: left;
+    width: 234px;
+    height: 614px;
+    /* background-color: pink; */
+    transition: all .5s linear;
+    cursor: pointer;
+}
+
+.phone .aside img {
+    width: 234px;
+    transition: all .5s;
+}
+
+.phone .aside img:hover {
+    transform: scale(1.1);
+}
+
+.list li {
+    float: left;
+    overflow: hidden;
+    width: 234px;
+    height: 300px;
+    padding: 15px 20px 0;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    background-color: #fff;
+    transition: all .5s linear;
+    cursor: pointer;
+
+}
+
+.list li:hover img {
+    transform: scale(1.1);
+}
+
+.list li img {
+    width: 160px;
+    margin-bottom: 18px;
+    transition: all .5s linear;
+}
+
+.list li h3 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 10px 2px;
+}
+
+.list li p {
+    /* margin: 0 10px 10px; */
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+
+}
+
+.list li h4 {
+    margin: 0 10px 14px;
+    color: #ff6700;
+    font-weight: 400;
+}
+
+/* main end */
